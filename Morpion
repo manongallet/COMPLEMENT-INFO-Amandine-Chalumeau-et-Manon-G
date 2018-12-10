@@ -1,1 +1,41 @@
+class Joueur_humain:
+    def _init_(self,Nom,Symbole, NoLigne, NoColonne):
+        self.Nom = Nom
+        self.Symbole = Symbole
+        self.NoLigne = NoLigne
+        self.NoColonne = NoColonne
+        
+class Joueur_ordi:
+    def _init(self,Nom,Symbole, NoLigne, NoColonne):
+        self.Nom = Nom
+        self.Symbole = Symbole
+        self.NoLigne = NoLigne
+        self.NoColonne = NoColonne
+
+class Tableau:
+    def _init(self, NbreLigne, NbreColonne):
+        self.NbreLigne = NbreLigne
+        self.NbeColonne = NbreColonne
+
+class Gestion_du_Jeu:
+    def _init(self, MaitreDuJeu):
+        self.MaitreDuJeu
+
+
+Joueur_humain.Nom=input("Entrer votre nom : ")
+Joueur_humain.Symbole=input("Entrer le symbole que vous voulez utiliser pour jouer(X ou O): ")
+M=[]
+
+Joueur_ordi.Nom = "Ordi"
+if Joueur_humain.Symbole == "X":
+    Joueur_ordi.Symbole = "O"
+else:
+    Joueur_ordi.Symbole = "X"
+
+Tableau.NbreLigne = 3
+Tableau.NbreColonne = 3
+
+M=" _ _ _\n| | | |\n"" _ _ _\n| | | |\n"" _ _ _\n| | | |\n"" _ _ _"
+
+print(M)
 
